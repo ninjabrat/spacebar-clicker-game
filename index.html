@@ -24,11 +24,27 @@
             font-size: 2em;
             color: #333;
         }
+        .vault {
+            margin-top: 20px;
+        }
+        .vault input {
+            font-size: 1em;
+            padding: 5px;
+        }
+        .vault button {
+            font-size: 1em;
+            padding: 5px 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Spacebar Clicker</h1>
     <h2>Your total spacebar clicks: <span id="clickCount">0</span></h2>
+
+    <div class="vault">
+        <input type="text" id="vaultCode" placeholder="Enter vault code">
+        <button onclick="checkVaultCode()">Submit</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
